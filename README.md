@@ -121,11 +121,11 @@
 ### Физическая(денормализованная) схема базы данных
 ![DB_phiz](https://github.com/qqq4u/HL_Music/assets/44649392/d0b63447-0a0f-4633-8645-52caa437be4c)
 
-(избегать)
-tracks: +artist_name
-albums: +creator_name, +is_official
-tracks_histories: +track_name, +track_artist_name
-tracks_collections: +track_name, `+track_artist_name
+(избегаем джойнов)
+ * tracks: +artist_name
+ * albums: +creator_name, +is_official
+ * tracks_histories: +track_name, +track_artist_name
+ * tracks_collections: +track_name, `+track_artist_name
 
 ### Рассчёт занимаемого дискового пространства 
 
@@ -167,7 +167,7 @@ tracks_histories  | 336         | 2 * 4 + 2 * 80 = 168         | 56 338
 ### Подсчитаем итоговые данные:
 
 **Пользователи:**
-14880 + 36920 + 492 + 50,4 + 7808 + 64 + 61 + 960 + 16000 + 2184000 + 56338 = 2 317 573,4 МБ = 2,31 ТБ дыннх пользователей 
+14880 + 36920 + 492 + 50,4 + 7808 + 64 + 61 + 960 + 16000 + 2184000 + 56338 = 2 317 573,4 МБ = 2,31 ТБ данных пользователей 
 
 **Аудио**
   * 128kbps = 3 мин * (85 МБ / 60 мин) = 4,25 МБ
