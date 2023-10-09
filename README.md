@@ -121,7 +121,8 @@
 ### Физическая(денормализованная) схема базы данных
 ![DB_phiz](https://github.com/qqq4u/HL_Music/assets/44649392/d0b63447-0a0f-4633-8645-52caa437be4c)
 
-(избегаем джойнов)
+(избегаем некоторых джойнов)
+
  * tracks: +artist_name
  * albums: +creator_name, +is_official
  * tracks_histories: +track_name, +track_artist_name
